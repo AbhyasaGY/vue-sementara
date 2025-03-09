@@ -24,7 +24,7 @@
         scrollText: '<i class="fi-rr-arrow-small-up"></i>',
         easingType: "linear",
         scrollSpeed: 900,
-        animation: "fade"
+        animation: "fade",
     });
     /*------ Wow Active ----*/
     new WOW().init();
@@ -58,7 +58,7 @@
     if ($(".count").length) {
         $(".count").counterUp({
             delay: 10,
-            time: 2000
+            time: 2000,
         });
     }
     // Isotope active
@@ -71,8 +71,8 @@
                 layoutMode: "masonry",
                 masonry: {
                     // use outer width of grid-sizer for columnWidth
-                    columnWidth: ".grid-item"
-                }
+                    columnWidth: ".grid-item",
+                },
             });
         });
     }
@@ -177,27 +177,27 @@
             loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
+                prevEl: ".swiper-button-prev",
             },
             autoplay: {
-                delay: 10000
+                delay: 10000,
             },
             breakpoints: {
                 1199: {
-                    slidesPerView: 6
+                    slidesPerView: 6,
                 },
                 800: {
-                    slidesPerView: 4
+                    slidesPerView: 4,
                 },
                 400: {
-                    slidesPerView: 2
+                    slidesPerView: 2,
                 },
                 350: {
                     slidesPerView: 2,
                     slidesPerGroup: 1,
-                    spaceBetween: 15
-                }
-            }
+                    spaceBetween: 15,
+                },
+            },
         });
     });
     $(".swiper-group-3").each(function () {
@@ -209,7 +209,7 @@
             loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
+                prevEl: ".swiper-button-prev",
             },
             pagination: {
                 el: ".swiper-pagination",
@@ -225,25 +225,25 @@
                         }
                     }
                     return customPaginationHtml;
-                }
+                },
             },
             autoplay: {
-                delay: 10000
+                delay: 10000,
             },
             breakpoints: {
                 1199: {
-                    slidesPerView: 3
+                    slidesPerView: 3,
                 },
                 800: {
-                    slidesPerView: 2
+                    slidesPerView: 2,
                 },
                 400: {
-                    slidesPerView: 1
+                    slidesPerView: 1,
                 },
                 350: {
-                    slidesPerView: 1
-                }
-            }
+                    slidesPerView: 1,
+                },
+            },
         });
     });
     $(".swiper-group-2").each(function () {
@@ -255,7 +255,7 @@
             loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
+                prevEl: ".swiper-button-prev",
             },
             pagination: {
                 el: ".swiper-pagination",
@@ -271,28 +271,28 @@
                         }
                     }
                     return customPaginationHtml;
-                }
+                },
             },
             autoplay: {
-                delay: 10000
+                delay: 10000,
             },
             breakpoints: {
                 1199: {
-                    slidesPerView: 2
+                    slidesPerView: 2,
                 },
                 800: {
-                    slidesPerView: 1
+                    slidesPerView: 1,
                 },
                 600: {
-                    slidesPerView: 1
+                    slidesPerView: 1,
                 },
                 400: {
-                    slidesPerView: 1
+                    slidesPerView: 1,
                 },
                 350: {
-                    slidesPerView: 1
-                }
-            }
+                    slidesPerView: 1,
+                },
+            },
         });
     });
     //Dropdown selected item
@@ -315,7 +315,7 @@
             mainClass: "mfp-fade",
             removalDelay: 160,
             preloader: false,
-            fixedContentPos: false
+            fixedContentPos: false,
         });
     }
     // Init function billed
@@ -337,4 +337,4 @@ function checkBilled() {
     }
 }
 //Perfect Scrollbar
-const ps = new PerfectScrollbar(".mobile-header-wrapper-inner");
+const ps = new PerfectScrollbar(".mobile-header-wrapper-inner", { supressScrollX: true });
